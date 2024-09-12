@@ -1,0 +1,5 @@
+/home/igor/Documents/alura/Kafka/ecommerce/common-kafka/src/main/java/br/com/alura/ecommerce/GsonDeserializer.java
+/home/igor/Documents/alura/Kafka/ecommerce/common-kafka/src/main/java/br/com/alura/ecommerce/KafkaDispatcher.java
+/home/igor/Documents/alura/Kafka/ecommerce/common-kafka/src/main/java/br/com/alura/ecommerce/KafkaService.java
+/home/igor/Documents/alura/Kafka/ecommerce/common-kafka/src/main/java/br/com/alura/ecommerce/GsonSerializer.java
+/home/igor/Documents/alura/Kafka/ecommerce/common-kafka/src/main/java/br/com/alura/ecommerce/ConsumerFunction.java
