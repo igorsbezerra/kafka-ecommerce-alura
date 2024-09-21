@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="568d5a26-c942-4f6b-8c8f-2428d121d76c" name="Default Changelist" comment="multi-thread services">
+    <list default="true" id="568d5a26-c942-4f6b-8c8f-2428d121d76c" name="Default Changelist" comment="multi-thread services email new order">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/alura/ecommerce/ConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/alura/ecommerce/ConsumerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/alura/ecommerce/KafkaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/alura/ecommerce/KafkaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/alura/ecommerce/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/alura/ecommerce/ServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/alura/ecommerce/ServiceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/src/main/java/br/com/alura/ecommerce/ServiceProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common-kafka/target/classes/br/com/alura/ecommerce/ConsumerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/target/classes/br/com/alura/ecommerce/ConsumerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-kafka/target/classes/br/com/alura/ecommerce/KafkaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/target/classes/br/com/alura/ecommerce/KafkaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-email-new-order/src/main/java/br/com/alura/ecommerce/EmailNewOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-email-new-order/src/main/java/br/com/alura/ecommerce/EmailNewOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-email-new-order/target/classes/br/com/alura/ecommerce/EmailNewOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-email-new-order/target/classes/br/com/alura/ecommerce/EmailNewOrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-kafka/target/classes/br/com/alura/ecommerce/ServiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/target/classes/br/com/alura/ecommerce/ServiceFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-kafka/target/classes/br/com/alura/ecommerce/ServiceProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-kafka/target/classes/br/com/alura/ecommerce/ServiceProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-users/src/main/java/br/com/alura/ecommerce/CreateUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/src/main/java/br/com/alura/ecommerce/CreateUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-users/target/classes/br/com/alura/ecommerce/CreateUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/target/classes/br/com/alura/ecommerce/CreateUserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +101,20 @@
       <command value="mvn package" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.EmailNewOrderService">
+  <component name="RunManager" selected="Application.LogService">
+    <configuration name="CreateUserService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.alura.ecommerce.CreateUserService" />
+      <module name="service-users" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.alura.ecommerce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmailNewOrderService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.alura.ecommerce.EmailNewOrderService" />
       <module name="service-email-new-order" />
@@ -139,10 +154,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadingReportService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.alura.ecommerce.ReadingReportService" />
-      <module name="service-reading-report" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+    <configuration name="LogService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.alura.ecommerce.LogService" />
+      <module name="service-log" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.alura.ecommerce.*" />
@@ -170,34 +184,21 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.zookeeper: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="zookeeper" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.FraudDetectorService" />
+      <item itemvalue="Application.CreateUserService" />
       <item itemvalue="Application.EmailNewOrderService" />
       <item itemvalue="Application.HttpEcommerceService" />
-      <item itemvalue="Application.ReadingReportService" />
+      <item itemvalue="Application.LogService" />
       <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.zookeeper: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EmailNewOrderService" />
+        <item itemvalue="Application.LogService" />
         <item itemvalue="Application.HttpEcommerceService" />
+        <item itemvalue="Application.CreateUserService" />
+        <item itemvalue="Application.EmailNewOrderService" />
         <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.zookeeper: Compose Deployment" />
-        <item itemvalue="Application.ReadingReportService" />
       </list>
     </recent_temporary>
   </component>
@@ -221,12 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1726927379467</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="multi-thread services email new order">
+      <option name="closed" value="true" />
+      <created>1726929689534</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726929689534</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="multi-thread services" />
-    <option name="LAST_COMMIT_MESSAGE" value="multi-thread services" />
+    <MESSAGE value="multi-thread services email new order" />
+    <option name="LAST_COMMIT_MESSAGE" value="multi-thread services email new order" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ecommerce$ReadingReportService.ic" NAME="ReadingReportService Coverage Results" MODIFIED="1725745392662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
